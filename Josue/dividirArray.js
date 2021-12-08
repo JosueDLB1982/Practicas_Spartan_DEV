@@ -2,8 +2,8 @@
 
 const numbers = [10, 20, 30]
 const numbers2 = [20, 50, 1000]
-const numbers3 = [14, 52, 70, 96]
+const numbers3 = [14, 52, 74, 96, 106]
 
-const newNumbers = number => result = number.map(number=>number/2)
+const newNumbers = number => number.map(number=>number/2)
 
-console.log(newNumbers(numbers))
+console.log(`El nuevo array es: [${newNumbers(numbers3).join(", ")}]`)
