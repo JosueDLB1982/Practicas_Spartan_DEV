@@ -29,7 +29,7 @@ const sort = (arr) => {
 }
 console.log('Solución con callback',sort([15, 1, 3])) 
 
-/* const users = [
+ const users = [
     {
         name: 'Josue',
         id: 1
@@ -70,4 +70,4 @@ console.log(getUser(2, (err, user) => {
     return err ? err : getEmail(user, (err, res) => {
        return err ? err : res
     })
-})) */
+})) 
