@@ -1,4 +1,4 @@
-/* 
+
 const ordenarMayorMenor = (arr) => {
     if ((arr[0] > arr[1]) && (arr[0] > arr[2])) {
         if (arr[1] > arr[2]) {
@@ -10,7 +10,7 @@ const ordenarMayorMenor = (arr) => {
         if (arr[0] > arr[2]) {
             return Array(arr[1], arr[0], arr[2])
         } else {
-            return Array(arr[0], arr[2], arr[1])
+            return Array(arr[1], arr[2], arr[0])
         }
     } else {
         if(arr[0] > arr[1]) {
@@ -20,16 +20,16 @@ const ordenarMayorMenor = (arr) => {
         }
     }
 }
-console.log(ordenarMayorMenor([15, 1, 3]))
+console.log('Solución mi función', ordenarMayorMenor([15, 1, 3])) 
 
-console.log()
-console.log(err) console.log()
+
+
 const sort = (arr) => {
-    return arr.sort((a,b) => b - a)
+    return arr.sort((a, b) => b - a)
 }
-console.log(sort([15, 1, 3])) */
+console.log('Solución con callback',sort([15, 1, 3])) 
 
-const users = [
+/* const users = [
     {
         name: 'Josue',
         id: 1
@@ -63,11 +63,11 @@ const getUser = (id, cb) => {
 
 const getEmail = (users, cb) => {
     const email = emails.find(email => email.id === users.id)
-    return (!email) ? cb(`${users.name} tiene el id: ${users.id} pero no tiene email registrado`) : cb(null, /* {id: users.id, name: users.name, email: email.email } */`id de usuario: ${users.id}, nombre: ${users.name} y su email es: ${email.email}`)
+    return (!email) ? cb(`${users.name} tiene el id: ${users.id} pero no tiene email registrado`) : cb(null, {id: users.id, name: users.name, email: email.email})
 }
 
-console.log(getUser(3, (err, user) => {
+console.log(getUser(2, (err, user) => {
     return err ? err : getEmail(user, (err, res) => {
        return err ? err : res
     })
-}))
+})) */
